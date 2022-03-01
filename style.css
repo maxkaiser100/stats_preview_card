@@ -1,0 +1,122 @@
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+html {
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    
+    display: flex;
+    flex-direction: column;
+    max-width: 22.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: hsl(244, 38%, 16%);
+}
+
+.cardImage {
+    background-image: url(images/image-header-mobile.jpg), linear-gradient(rgba(200,152,230,0.7),rgba(200,152,230,0.7));
+    background-blend-mode: overlay;
+    background-size: contain;
+    width: 100%;
+    height: 200px;
+}
+
+
+
+
+
+.cardTitle {
+    padding: 0 1rem;
+}
+
+.cardInfo {
+    text-align: center;
+    padding: 0 2rem;
+    line-height: 1.5;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.cardStats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+ 
+}
+
+.companyStat {
+    display: flex;
+    flex-direction: column;
+    margin: .75rem;
+}
+
+.queryStat {
+    font-size: 2rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: .25rem;
+}
+.companyType {
+    text-transform: uppercase;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: .85rem;
+    letter-spacing: .1rem;
+}
+
+@media only screen and (min-width: 480px){
+    .card {
+        flex-direction: row-reverse;
+        max-width: 100rem;
+        width: 75rem;
+        height: 27rem;
+    }
+
+    .cardImage {
+        height: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .cardStats {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+   .cardTitle {
+       margin-top: 4rem;
+    
+   }
+
+   h2 {
+       font-size: 2.5rem;
+   }
+
+   .companyStat {
+       align-items: flex-start;
+   }
+
+   .cardInner {
+       margin: 1.5rem;
+   }
